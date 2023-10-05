@@ -1,0 +1,22 @@
+<!-- Steps to run the code :
+
+Note: Wait for the project to set up properly and then follow the steps.
+
+1. Open a terminal, change directory to the location where mongodb/bin is located.
+2. Start the mongodb server using './mongod' command.
+3. Now come to the main file "JumbotailAssignmentApplication.java" and run this file.
+
+After the file has run, all the logs will be visible on the terminal - event creation, enqueuing, pushing in the db and api response times.
+
+Different Endpoints : 
+http://localhost:8888/webhook -> POST request for pushing event batches in queue
+http://localhost:8888/queueContents -> GET request to view events in the queue
+http://localhost:8888/percentageInStage?stage=[Any stage from stages/events list] -> Get request to get percentage of users at the particulat stage in the app.
+http://localhost:8888/percentageInCity?city=[Any city from cities list] -> Get request to get percentage of users from a particular city.
+mongodb://localhost:27017/EventRepository -> Uri to connect to mongodb server at mongodb compass 
+
+Cities list -> [City1, City2, City3, City4, City5]
+Events list -> [AccessApp, ClickBanner, ViewProducts, SelectProduct, AddToCart]
+
+Note : Number of users and cities can be increased as required, but currently for simplicity, limited number of cities and users are taken.
+-->
